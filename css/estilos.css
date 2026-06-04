@@ -1,0 +1,190 @@
+/* Estilos Generales - NUEVO DISEÑO ÚNICO */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', sans-serif;
+}
+
+body {
+    background-color: #ffffff; /* Fondo blanco limpio */
+    color: #3a3a3a;
+    display: flex; /* Esto es lo que pone el menú al lado */
+}
+
+/* ====================================== */
+/* 📌 MENÚ LATERAL IZQUIERDO (FIJO) */
+/* ====================================== */
+.menu-lateral {
+    background-color: #234063; /* Azul marino oscuro - color nuevo */
+    width: 200px; /* Ancho fijo del menú */
+    height: 100vh; /* Ocupar toda la altura de la pantalla */
+    position: fixed; /* Se queda ahí aunque bajes */
+    left: 0;
+    top: 0;
+    padding-top: 30px;
+    box-shadow: 3px 0px 8px rgba(0,0,0,0.2); /* Sombra a la derecha */
+}
+
+.logo-menu {
+    text-align: center;
+    margin-bottom: 40px;
+    border-bottom: 2px solid #4a6fa5;
+    padding-bottom: 20px;
+}
+
+.logo-grande {
+    width: 110px; /* Logo grande como pediste antes */
+    height: auto;
+}
+
+/* Enlaces del menú */
+nav ul {
+    list-style: none;
+}
+
+nav ul li {
+    margin-bottom: 10px;
+}
+
+nav a {
+    display: block;
+    color: #ecf0f1;
+    text-decoration: none;
+    padding: 12px 15px;
+    font-size: 17px;
+    border-radius: 5px 0 0 5px;
+    margin-left: 8px;
+    transition: all 0.3s ease;
+}
+
+/* Página activa (donde estás parado) */
+nav a.activo {
+    background-color: #f9a826; /* Color naranja llamativo */
+    color: #234063;
+    font-weight: bold;
+}
+
+nav a:hover:not(.activo) {
+    background-color: #4a6fa5;
+    color: white;
+    margin-left: 15px; /* Efecto de moverse al pasar el mouse */
+}
+
+/* ====================================== */
+/* 📄 CONTENIDO PRINCIPAL A LA DERECHA */
+/* ====================================== */
+.contenido-principal {
+    margin-left: 200px; /* Deja espacio para el menú */
+    width: 100%;
+    background-color: #f8f9fa; /* Fondo gris muy claro */
+    min-height: 100vh;
+}
+
+/* Cabecera */
+header {
+    background: linear-gradient(to right, #4a6fa5, #6388bb); /* Degradado nuevo */
+    color: white;
+    padding: 30px 25px;
+    text-align: center;
+    border-bottom: 4px solid #f9a826;
+}
+
+header h1 {
+    font-size: 28px;
+    letter-spacing: 2px;
+    margin-bottom: 8px;
+}
+
+header p {
+    font-size: 16px;
+    opacity: 0.9;
+    font-style: italic;
+}
+
+/* Secciones y texto */
+main {
+    padding: 30px 40px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.seccion h2 {
+    color: #234063;
+    font-size: 24px;
+    margin-bottom: 15px;
+    border-left: 5px solid #f9a826;
+    padding-left: 10px;
+}
+
+.seccion p {
+    margin-bottom: 15px;
+    font-size: 16px;
+    line-height: 1.8;
+}
+
+/* Imágenes */
+.imagen-ajustada {
+    width: 100%;
+    max-height: 300px;
+    object-fit: cover;
+    border-radius: 10px;
+    border: 3px solid #4a6fa5;
+    margin-bottom: 20px;
+}
+
+/* Recuadros y tarjetas (formas distintas a las de antes) */
+.recuadro-dato {
+    background-color: #e8eff7;
+    border: 2px dashed #4a6fa5; /* Borde punteado, nuevo estilo */
+    padding: 15px;
+    border-radius: 8px;
+    margin: 20px 0;
+}
+
+.color-diferente {
+    background-color: #fff3cd;
+    border-color: #f9a826;
+}
+
+.fila-datos {
+    display: flex;
+    gap: 20px;
+    margin: 20px 0;
+}
+
+.tarjeta {
+    background-color: white;
+    flex: 1;
+    padding: 18px;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    border-top: 4px solid #6388bb;
+}
+
+.tarjeta h3 {
+    color: #234063;
+    margin-bottom: 8px;
+}
+
+/* Lista estilo nuevo */
+.lista-estilo {
+    list-style: none;
+    padding-left: 10px;
+    margin: 15px 0;
+}
+
+.lista-estilo li {
+    padding: 6px 0;
+    border-bottom: 1px solid #ddd;
+}
+
+/* Pie de página */
+footer {
+    background-color: #234063;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    margin-top: 30px;
+    font-size: 14px;
+}
